@@ -46,16 +46,16 @@ def Bleu(ref, pred):
 clip, count = Bleu(reference, output.split())
 
 N = 4
-clip = clip[:4]
-count = count[:4]
+clip = clip[:N]
+count = count[:N]
 
 vec_pn = np.divide(clip, count)
 
 pn = 0
 for i in range(N):
-    pn += np.log(clip[i]/count[i])
+    pn += (1/N) * np.log(clip[i]/count[i])
 
-bleu = np.exp(pn * (1/N)) * BP
+bleu = np.exp(pn) * BP
 
 print(bleu)
 
