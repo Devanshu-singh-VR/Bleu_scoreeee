@@ -6,5 +6,4 @@ The new paper resolve the error, the blue score value is �:
 
 ![newb](https://user-images.githubusercontent.com/75822824/133872675-a1ca6266-cf10-4335-a2ec-a2b0b9e22571.png)
 
-But the value (wn) should be out of the submission.
 
